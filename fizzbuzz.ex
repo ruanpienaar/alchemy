@@ -33,4 +33,4 @@ defmodule FizzBuzz do
 
 end
 
-IO.puts FizzBuzz.check
+#IO.puts FizzBuzz.check

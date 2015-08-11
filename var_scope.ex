@@ -1,8 +1,8 @@
 defmodule Scope do
   
-  def set(some_arg // "nothing") do
-    the_arg? = some_arg
-  end
+  # def set(some_arg // "nothing") do
+  #   # the_arg? = some_arg
+  # end
 
 # THIS WOULD happen for get()
  # == Compilation error on file ./var_scope.ex ==
