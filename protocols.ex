@@ -27,9 +27,16 @@ defimpl Blank, for: Atom do
 	def blank?(_),     do: false
 end
 
+# For Any Datatype other than specified above...
+defimpl Blank, for: Any do
+	def blank?(_), do: false
+end
+
 defimpl Blank, for: User do
 	def blank?(user) do
 		case user.created do
+			false ->
+				false
 			nil ->
 				true
 			_ ->
